@@ -6,9 +6,10 @@ import re
 import requests
 import json
 
-# input your api key which you can find following this guide https://ubicast.tv/static/mediaserver/docs/api/index.html#authentication
-api_key = ""
-ubicast_server = ""
+config = json.loads("config.json")
+api_key = config["api_key"]
+ubicast_server = config["ubicast_server"]
+
 try:
     url = sys.argv[1]
 except IndexError:
