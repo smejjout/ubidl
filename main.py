@@ -6,7 +6,7 @@ import re
 import requests
 import json
 
-config = json.loads("config.json")
+config = json.load("config.json")
 api_key = config["api_key"]
 ubicast_server = config["ubicast_server"]
 
