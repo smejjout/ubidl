@@ -7,8 +7,8 @@ import requests
 import json
 
 # input your api key which you can find following this guide https://ubicast.tv/static/mediaserver/docs/api/index.html#authentication
-api_key = "pUMbY-n4erd-j4sT7-AqQY4-cpYEN"
-ubicast_server = "https://medias.unamur.be/"
+api_key = ""
+ubicast_server = ""
 try:
     url = sys.argv[1]
 except IndexError:
