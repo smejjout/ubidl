@@ -6,11 +6,10 @@ import re
 import requests
 import json
 
-config_file = open("config.json")
-config = json.load(config_file)
-api_key = config["api_key"]
-ubicast_server = config["ubicast_server"]
-config_file.close()
+with open("config.json") as config_file:
+    config = json.load(config_file)
+    api_key = config["api_key"]
+    ubicast_server = config["ubicast_server"]
 
 try:
     url = sys.argv[1]
